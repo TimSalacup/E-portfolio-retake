@@ -19,7 +19,7 @@ span {
   text-align: center;
 }
 
-h1{
+h1 {
   font-size: 36px;
 }
 
@@ -50,19 +50,19 @@ li {
   margin: 0 auto;
 }
 
-.text--color{
+.text--color {
   color: rgb(144, 106, 101);
 }
 
-section:nth-child(even){
+section:nth-child(even) {
   background-color: #f8f8f8;
 }
 
-.container{
+.container {
   padding: 50px 0;
 }
 
-.section__title{
+.section__title {
   margin-bottom: 20px;
 }
 
@@ -117,7 +117,6 @@ nav {
   align-items: center;
 }
 
-
 .about-me__picture--mask {
   height: 125px;
   border-radius: 50%;
@@ -138,62 +137,117 @@ nav {
   max-width: 600px;
 }
 
-.about-me__info--title{
+.about-me__info--title {
   margin-bottom: 16px;
 }
 
-.about-me__info--para{
-  font-size: 20px; 
+.about-me__info--para {
+  font-size: 20px;
   margin-bottom: 28px;
   text-align: center;
 }
 
-.about-me__link{
+.about-me__link {
   font-size: 24px;
   color: black;
   text-decoration: none;
   padding: 0 16px;
 }
 
-.about-me__img--container{
+.about-me__img--container {
   flex: 1;
   display: flex;
 }
 
-.about-me__img{
+.about-me__img {
   width: 100%;
 }
 
 /* TECH - STACK */
 
-.language__list{
+.language__list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
-.language{
+.language {
   width: 25%;
-  padding: 25px 16px;
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
-.language__img{
+.language__img {
   width: 100%;
   max-width: 100px;
   transition: all 200ms;
-  margin-bottom: 16px;
 }
 
-.language__img:hover{
+.language:hover .language__img {
   filter: brightness(80%);
   opacity: 0.86;
   transform: scale(0.9);
 }
 
-.language__name{
+.language__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 16px;
+}
+
+.language__name {
   position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  transform: scale(0);
+  transition: all 200ms ease;
+  opacity: 0;
+}
+
+.language:hover .language__name {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* PROJECTS */
+
+.project__img {
+  width: 100%;
+  transition: all 200ms;
+}
+
+.project__wrapper {
+  box-shadow: 0 0 36px rgba(0, 0, 0, 0.4);
+  border-radius: 3%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.project__wrapper:before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1c1d25;
+  opacity: 0;
+  transition: opacity 200ms;
+  z-index: 2;
+}
+
+.project:hover .project__wrapper:before{
+  opacity: 0.7;
+}
+
+.project:hover  .project__img{
+  transform: scale(1.07);
+  filter: blur(5px);
+}
+
+.project__list{
+  padding-top: 40px;
 }
