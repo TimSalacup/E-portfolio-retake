@@ -7,20 +7,68 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, span {
-    color: #242424;
-    line-height: 1.25;
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: #242424;
+  line-height: 1.25;
+  text-align: center;
 }
 
-p{
-    font-size: 16px;
-    line-height: 1.5;
+h1{
+  font-size: 36px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+li {
+  list-style-type: none;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.text--color{
+  color: rgb(144, 106, 101);
+}
+
+section:nth-child(even){
+  background-color: #f8f8f8;
+}
+
+.container{
+  padding: 50px 0;
+}
+
+.section__title{
+  margin-bottom: 20px;
 }
 
 /* NAVIGATION BAR */
 
-nav{
+nav {
   height: 100px;
   max-width: 1000px;
   width: 100%;
@@ -30,15 +78,122 @@ nav{
   align-items: center;
 }
 
-.nav__link--list{
+.nav__link--list {
   display: flex;
 }
 
-li{
-  list-style-type: none;
-}
-
-.nav__link--anchor{
+.nav__link--anchor {
   color: #242424;
   text-decoration: none;
+  margin: 0 12px;
+  font-weight: 700;
+}
+
+.nav__link--anchor-primary {
+  background-color: rgb(115, 71, 71);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: all 200ms ease;
+}
+
+.nav__link--anchor-primary:hover {
+  background-color: rgb(173, 122, 116);
+}
+
+.personal__logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 12px;
+  color: rgb(115, 71, 71);
+}
+
+/* ABOUT-ME */
+
+#about-me {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.about-me__picture--mask {
+  height: 125px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.36);
+  margin-bottom: 28px;
+}
+
+.about-me__picture {
+  height: 100%;
+}
+
+.about-me__info--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.about-me__info--title{
+  margin-bottom: 16px;
+}
+
+.about-me__info--para{
+  font-size: 20px; 
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.about-me__link{
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  padding: 0 16px;
+}
+
+.about-me__img--container{
+  flex: 1;
+  display: flex;
+}
+
+.about-me__img{
+  width: 100%;
+}
+
+/* TECH - STACK */
+
+.language__list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.language{
+  width: 25%;
+  padding: 25px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.language__img{
+  width: 100%;
+  max-width: 100px;
+  transition: all 200ms;
+  margin-bottom: 16px;
+}
+
+.language__img:hover{
+  filter: brightness(80%);
+  opacity: 0.86;
+  transform: scale(0.9);
+}
+
+.language__name{
+  position: absolute;
 }
