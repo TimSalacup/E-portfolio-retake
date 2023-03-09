@@ -16,22 +16,22 @@
       <nav>
         <div class="personal__logo">Tim Salacup</div>
         <ul class="nav__link--list">
-          <li>
+          <li class="nav__link">
             <a
-              href=""
+              href="#languages"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Languages</a
             >
           </li>
-          <li>
+          <li class="nav__link">
             <a
-              href=""
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
           </li>
-          <li>
-            <a href="" class="nav__link--anchor nav__link--anchor-primary"
+          <li class="nav__link">
+            <a href="mailto:timothysalacup@gmail.com" class="nav__link--anchor nav__link--anchor-primary"
               >Contact</a
             >
           </li>
@@ -48,7 +48,8 @@
               />
             </figure>
             <h1 class="about-me__info--title">
-              Hey! I'm <span class="text--color">Tim Salacup</span> 👋
+              Hey! I'm <span class="text--color">Tim Salacup</span>
+              <span class="about-me__hand">👋</span>
             </h1>
             <p class="about-me__info--para">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
@@ -65,7 +66,10 @@
               <a href="" class="about-me__link"
                 ><i class="far fa-envelope"></i
               ></a>
-              <a href="" class="about-me__link"
+              <a
+                href="./assets/Example Resume.pdf"
+                class="about-me__link"
+                target="_blank"
                 ><i class="fas fa-file-pdf"></i
               ></a>
             </div>
@@ -186,21 +190,65 @@
                   alt="car subscription prpject"
                 />
                 <div class="project__description">
-                  <h3 class="project__description--title">Car Sales Project</h3>
+                  <h3 class="project__description--title">Future project</h3>
                   <h4 class="project__description--sub-title">
                     HTML, CSS, JavaScript, Vue, Vuex
                   </h4>
                   <p class="project__description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Incidunt qui placeat, reprehenderit temporibus et officia
-                    culpa provident delectus deserunt iste!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Et, ut excepturi iste totam enim voluptates a provident
+                    minus accusamus. Facilis, nihil aliquam iure tempore aperiam
+                    fuga libero excepturi officia quidem.
                   </p>
                   <div class="project__description--links">
-                    <a href="https://github.com/TimSalacup" class="project__description--link">
+                    <a
+                      href="https://github.com/TimSalacup"
+                      class="project__description--link"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://github.com/TimSalacup" class="project__description--link" target="_blank">
-                      <i class="fa-solid fa-link"></i>
+                    <a
+                      href="https://github.com/TimSalacup"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/loopit.png"
+                  class="project__img"
+                  alt="car subscription prpject"
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">Future Project</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Et, ut excepturi iste totam enim voluptates a provident
+                    minus accusamus. Facilis, nihil aliquam iure tempore aperiam
+                    fuga libero excepturi officia quidem.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/TimSalacup"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://github.com/TimSalacup"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link"></i>
                     </a>
                   </div>
                 </div>
@@ -210,5 +258,50 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="row footer__row">
+        <a href="#">
+          <div class="footer__logo">
+            <figure>
+              <img
+                src="./assets/White logo.png"
+                alt="white personal logo"
+                class="footer__logo--img"
+              />
+            </figure>
+            <span class="footer__logo--popper"
+              >Top <i class="fas fa-arrow-up"></i
+            ></span>
+          </div>
+        </a>
+        <div class="footer__social--list">
+          <a
+            href="https://google.com"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >Github</a
+          >
+          <a
+            href="https://google.com"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            href="mailto:timothysalacup@gmail.com"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >Email</a
+          >
+          <a
+            href="./assets/Example Resume.pdf"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+        <div class="footer__copyright">Copyright © 2023 Tim Salacup</div>
+      </div>
+    </footer>
   </body>
 </html>
